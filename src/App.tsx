@@ -2,6 +2,7 @@ import React from "react";
 import { Header, ProjectsList } from "./components/organisms";
 import TabNavigation from "./components/templates/TabNavigation";
 import ThemeProvider from "./theme/Provider";
+import projects from './constants/projects';
 
 const App = () => {
   return (
@@ -14,109 +15,9 @@ const App = () => {
         ]}
       >
         <ProjectsList
-          data={[
-            {
-              name: "Train N Go",
-              description:
-                "Plataforma unificada para academias de pequeno e médio porte.",
-              badges: [
-                "react",
-                "expo",
-                "redux",
-                "redux-saga",
-                "styled-components",
-              ],
-            },
-            {
-              name: "NoPique",
-              description:
-                "Plataforma unificada para academias de pequeno e médio porte.",
-              badges: [
-                "react",
-                "expo",
-                "redux",
-                "redux-saga",
-                "styled-components",
-              ],
-            },
-            {
-              name: "Eter",
-              description:
-                "Plataforma unificada para academias de pequeno e médio porte.",
-              badges: [
-                "react",
-                "expo",
-                "redux",
-                "redux-saga",
-                "styled-components",
-              ],
-            },
-            {
-              name: "Concretiza",
-              description:
-                "Plataforma unificada para academias de pequeno e médio porte.",
-              badges: [
-                "react",
-                "expo",
-                "redux",
-                "redux-saga",
-                "styled-components",
-              ],
-            },
-            {
-              name: "Evoé",
-              description:
-                "Plataforma unificada para academias de pequeno e médio porte.",
-              badges: [
-                "react",
-                "expo",
-                "redux",
-                "redux-saga",
-                "styled-components",
-              ],
-            },
-          ]}
+          data={projects}
         />
-        <ProjectsList
-          data={[
-            {
-              name: "Train N Go",
-              description:
-                "Plataforma unificada para academias de pequeno e médio porte.",
-              badges: [
-                "react",
-                "expo",
-                "redux",
-                "redux-saga",
-                "styled-components",
-              ],
-            },
-            {
-              name: "NoPique",
-              description:
-                "Plataforma unificada para academias de pequeno e médio porte.",
-              badges: [
-                "react",
-                "expo",
-                "redux",
-                "redux-saga",
-                "styled-components",
-              ],
-            },
-            {
-              name: "Concretiza",
-              description:
-                "Plataforma unificada para academias de pequeno e médio porte.",
-              badges: [
-                "react",
-                "expo",
-                "redux",
-                "redux-saga",
-                "styled-components",
-              ],
-            },
-          ]}
-        />
+        <>Comming soon</>
       </TabNavigation>
     </ThemeProvider>
   );
