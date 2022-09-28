@@ -8,10 +8,11 @@ export interface IProjectCard {
   description?: string;
   badges?: imageType[];
   frames?: string[];
+  platform?: 'desktop' | 'mobile'
 }
 
 const ProjectItem = (props: IProjectCard) => {
-  const { name, description, badges = [] } = props;
+  const { name, description, badges = [], platform = 'desktop' } = props;
   const [showPreview, setShowPreview] = useState(false);
 
   const handleMouseIn = () => setShowPreview(true);
@@ -33,7 +34,7 @@ const ProjectItem = (props: IProjectCard) => {
       <Preview>
         <SlidingDevice>
           <Frame isShowing={showPreview}>
-            <DeviceFrame variant="desktop" />
+            <DeviceFrame variant={platform} />
           </Frame>
         </SlidingDevice>
       </Preview>
